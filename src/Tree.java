@@ -15,5 +15,15 @@ public class Tree {
         System.out.println("Common Set: " + commonSet);
     }
 
+    public static TreeSet<Character> getRandomCharacterSet() {
+        TreeSet<Character> set = new TreeSet<>();
+        Random random = new Random();
+        for (int i = 0; i < 10; i++) {
+            char randomChar = (char) (random.nextInt(26) + 'a');
+            set.add(randomChar);
+        }
+        return set;
+    }
+
 
 }
