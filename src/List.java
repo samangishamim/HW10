@@ -11,5 +11,14 @@ public class List {
         System.out.println(list1);
     }
 
-
+    public static ArrayList<Integer> deletePairs(ArrayList<Integer> list) {
+        for (int i = 0; i < list.size(); i += 2) {
+            if (list.get(i) < list.get(i + 1)) {
+                list.remove(i);
+                list.remove(i);
+                i = i - 2;
+            }
+        }
+        return list;
+    }
 }
