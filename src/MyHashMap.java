@@ -62,7 +62,7 @@ public class MyHashMap<K, V> {
                 return null;
             }
             while (e != null) {
-                if (e.getkey() == key) {
+                if (e.getKey() == key) {
                     return e.getValue();
                 }
             e=e.next;
